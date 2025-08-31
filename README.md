@@ -1,0 +1,415 @@
+# Comp 376
+
+As usual, this outline is a work in progress/draft/brain dump style document.
+
+[Link to catalog](https://www.franklin.edu/catalog#/courses/B1cu0-Rv6)
+
+## Course Overview
+
+1. Model training and serving with deployable scripts instead of notebooks - 1-2 week
+2. Model tracking w/ MLFlow - 2-3 weekes
+3. ETL pipelines (w/ pyspark??) - 2-3 weeks
+4. Feature stores - 1 week
+5. Live prediction vs. Batch prediction 1 week
+6. Applied LLM topics (RAG, agents, etc.) 2-3 weeks
+
+## Schedule
+
+Week | Topic
+-----|-----
+1    | Intro to Cloud Computing/Python Scripts and Dependencies
+2    | MLFlow for Experiment Tracking
+3    | MLFlow for Model Deployment
+4    | Feature Stores with Feast
+5    | Mid-Semester Project 1
+6    | Mid-Semester Project 2
+7    | Introduction to LLMs
+8    | Prompt Engineering
+9    | LLM Based Agents
+10   | MLFlow for Generative AI Model Tracking
+11   | End of Semester Project 1
+12   | End of Semester Project 2
+
+
+# Module Breakdown
+
+## Week 1: Intro to Cloud Computing/Python Scripts and Dependencies
+
+
+**Learning Outcomes**
+
+
+* Students can explain what we mean by cloud coumpting.
+* Students are able to log into a cloud environment and execute basic commands.
+* Studentc can run install Python modules and run scripts on the cloud.
+* Students can explain the pros/cons of working in Jupyter notebooks vs. in Python scripts or executable modules.
+* Students can explain dependency managenment with `pip` and `requirements.txt`. 
+* Students understand the need for virtual environments and can create new venvs using different tools
+    - `vevv`
+    - `poetry`
+    - `uv`
+* Students can create Python scripts executable from the command line, with arguments. (Optional: use the Click library).
+
+
+**Reading and Preparation**
+
+* [Real Python](https://realpython.com/if-name-main-python/)
+
+
+**Optional Resources**
+
+* [Click](https://click.palletsprojects.com/en/stable/)
+* [venv](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)
+* [Poetry](https://python-poetry.org/)
+* [uv](https://docs.astral.sh/uv/)
+
+### Homework
+
+1. (Short answer). 
+Give and example of a situation where a Jupyter notebook is preferable to a Python script. Give another example where a script is preferable. Explain why in each case.
+2. (Short answer). Explain the purpose of `if __name__ == '__main__'` in a Python program.
+3. (Short answer). Explain why we need something like `requirements.txt` to manage our dependencies.
+4. (Coding). Take the given jupyter notebook file and translate it into an executable Python script.
+Make sure to allow the user to provide command line arguments for hyperparameter values of the trained model.
+
+Example use:
+
+```bash
+$ python train_model.py --data data.csv --regularization 3.0 --output model.pkl
+```
+**Purpose**
+
+To make sure that students understand the importance of creating executable scripts for use in a production environment as opposed to an expermentation/analysis environment.
+
+**Overview**
+
+Students will have a `comp_376` virtual environment which they will be able to use for the remainder of the semester.
+
+**Action Items**
+
+**Grading Criteria**
+
+## Week 2:  MLFLow for Experiment Tracking
+
+**Learning Outcomes**
+
+* Students are able to explain the importance of using tools like MLFlow to track traditional machine learning model training.
+* Students can install MLFlow and run an MLFlow tracking server locally.
+* Students can integrate with a remote MLFLow tracking server.
+* Students are able to integrate MLFlow code into an existing training script.
+
+**Reading and Preparation**
+
+* [MLFlow experments documentation](https://mlflow.org/docs/latest/ml/)
+
+**Optional Resources**
+
+### Homework
+
+1. (Short answer). Explain what MLFlow is and how we can use it for model tracking.
+2. (Coding). Take a given Python script which trains a model. Edit the script to inforporate MLFlow experiment tracking.
+3. (Coding). Update the script from question 2. to track additional metrics and a plot artifact.
+
+**Purpose**
+
+To teach the students the importance of an organized experiment tracking workflow.
+
+**Overview**
+
+**Action Items**
+
+Install `mlflow` into the virtual environment.
+
+**Grading Criteria**
+
+
+## Week 3:  MLFLow for model deployment and tracking
+
+**Learning Outcomes**
+
+* Students are able to explain the difference between model metrics (e.g. accuracy, mean square error, etc.) and business key performance indecators (KPIs) such as customer conversion rate.
+* Students can explain two things  which impact an overall model:
+    - Version of the code used to train
+    - Dataset used to train the model 
+* Students can explain data drift and can track data drift in two ways.
+    - Track drift in the input features using unsupervised methods
+    - Track actual model performance once true values are ovserved.
+* Students can explain selection bias as it pertains to model training and model evaluation.
+* Students are able to "deploy" a model to a MLFLow web server and make predictions.
+* Students can track model performance over time (simulated).
+
+**Reading and Preparation**
+
+**Optional Resources**
+
+### Homework
+
+1. (Short answer). What is data drift, and why should we be concerened with it?
+2. (Short answer). Explain the difference between a model metric and a business KPI. Give an example of a buisniess problem which could be solved with machine learning, the associeated KPI, and the model metric you would use.
+3. (Short answer). Suppose you are working on a model to predict crecit card fraud for a financial institution. Your project manager, who is not trained in machine learning, insists that the model must be 99% accurate. What would you say to the manager and how would you incorporate that requirement into your project?
+4. (Short ansert). You are working on a model which is used to assist in approving or denying loan applications. The model predicts whether or not the borrower will default on the loan, and if the predicted probabilty of default is low, the loan is approved. After tracking the model for six months, you see that 5% of borrowers default. Explain one issue with using this 5% default rate alone to evaluate your model's performance.
+5. (Coding). Use the given model training script to train a model, deploy the model to an MLFlow model serving endpoint. 
+6. (Coding). Use the model from 3. to make predictions over 12 simulated months (provided CVS files jan.csv, feb.csv, etc.). Track the data drift and make a recommendation for when the model should be retrained.
+
+**Purpose**
+
+The purpose of this lesson is to teach the students how to depoly a model for prediction using MLFlow endpoints, and common gotchas encountered when evaluating models in live enfironments. This lesson focuses more on the theoretical side, with a little bit on the coding side.
+
+**Overview**
+
+**Action Items**
+
+**Grading Criteria**
+
+For #4. The issue is that we do not observe the repayment behaviour of applicants who were initially denied, so we do not know how well the model actually performs on the general population.
+
+
+## Week 4: Feature Development and Feature Store
+
+**Learning Outcomes**
+
+* Students can explain the use case of a feature store when working on an ML team.
+    - Explain the value from a data scientist's perspective, as well as from an ML engineer's perspective
+* Students can install and deploy the Feast feature store.
+* Students can explain the difference between raw input data and model features.
+* Students can define new features and train models using those features.
+* Students can use a feature store to create training datasets, by joining past observations with future results.
+* Students can explain the issue of reproducabilty when creating features.
+
+**Reading and Preparation**
+
+[Feast Quickstart](https://docs.feast.dev/v0.42-branch/getting-started/quickstart)
+
+**Optional Resources**
+
+[What is a Feature Store? Video](https://www.youtube.com/watch?v=DESBDukN9gw)
+
+### Homework
+
+1. (Short answer). What is a feature store and why would a ML organization want to use one?
+2. (Short answer). Give an example of a situation where a lack of care in feature generation could result in poor model performance after deployment.
+3. (Coding). Take the given dataset with columns `customer_id`, `date`, `current_balance`,  and `payment_amount`. Create a new feature which computes the average payment percentage for each customer: (total payment amount) / (total balance).
+4. (Coding). Use the feature store to create a training set to predict the customer's balance next month.
+
+**Purpose**
+
+**Overview**
+
+**Action Items**
+
+**Grading Criteria**
+
+## Weeks 5 & 6 Mid Semester Project
+
+Take everything we have learned over the last two weeks and incorporate it into a medium sized project.
+
+**Learning Outcomes**
+
+* Students will work in teams of 3-4  to create an end-to-end machine learning project.
+* Class time will function similarly to a real DS team meeting in a company.
+* Students will breakout into Zoom rooms to discuss their role and responsibilties.
+* The professor will hop from room to room to make sure that things are going smoothly
+
+**Reading and Preparation**
+
+**Optional Resources**
+
+### Project Description
+
+This project will allow the students to create a ML training and deployment system.
+The project will use a "database" of raw data.
+This database will have two tables which the students will need to interacti with to create their features.
+In addition, the database tables will _not_ simply be a feature matrix.
+Students will need to incorporate all the skills they have learned up to this point in one large project and work on a team.
+
+Week 1 milestones:
+
+* Students have created a github repo to hold their work (use template provided)
+* Students incorporate feast, mlflow, and sklearn into their project.
+* Students can access the "database" (just a sqlite db)
+* Students can create a training dataset and train a basic model.
+
+Week 2 milestones:
+
+* Students have trained multiple models and can summarize their findings. 
+* Students can deploy their model with mlflow endopints to make predictions.
+* Students can can track their model's data drift. Multiple models have been trained, with different version and metrics tracked.
+
+**Purpose**
+
+So much of the work in machine learning is very different when working on a team vs. working alone.
+This project tries to simulate the situation of working on a team with several other people.
+Ideally, we would have a small server set up to host models and MLFlow servers.
+
+**Overview**
+
+**Action Items**
+
+**Grading Criteria**
+
+The professor has access to the team's github repo (and commit history) as well as the content of the MLFlow server and feature store.
+
+The final model deployment will be evaluated by the professor using a dataset of new values the students did not have access to.
+Students will be required to write detailed instructions for how to use the system they developed and the professor should be able to follow them.
+
+The student's ecosystem should be able to handle:
+
+* Missing values, including values which were never missing in the data provided to them.
+* ... More things... (TODO)
+
+## Week 7: Introduction to LLMs 
+
+**Learning Outcomes**
+
+**Reading and Preparation**
+
+**Optional Resources**
+
+### Homework Description
+
+**Purpose**
+
+**Overview**
+
+**Action Items**
+
+**Grading Criteria**
+
+## Week 8: Prompt Engineering
+
+**Learning Outcomes**
+
+**Reading and Preparation**
+
+**Optional Resources**
+
+### Homework Description
+
+**Purpose**
+
+**Overview**
+
+**Action Items**
+
+**Grading Criteria**
+
+## Week 9: LLM Based Agents
+
+**Learning Outcomes**
+
+* Students can explain what an AI agent is and what we might use one fore
+* Students can create simple AI agent tools.
+
+**Reading and Preparation**
+
+**Optional Resources**
+
+### Homework Description
+
+1. (Short Answer). What is an AI agent? When should you consider using one?
+2. (Short Answer). What are some downsides of working with AI agents as opposed to traditional software solutions?
+3. (Short Answer). What do we mean by a "tool" in the context of AI agents?
+4. (Coding). Read a csv file which contains a table of children and their favorite foods.
+Using an LLM from hugging face, create a tool which allows the agent to answer questions about favorite foods.
+Fill in the missing functionality in the given python script.
+
+(Use provided template python script file).
+
+```
+fav_foods.csv
+
+name,category,favorite
+Charlie,pizza,pepperoni
+Charlie,icecream,strawberry
+Jessica,pizza,cheese
+...
+```
+Example use:
+```
+
+> What is Charlie's favorite flavor of icecream?  
+
+Charlie like strawberry icecream.
+```
+
+**Purpose**
+
+**Overview**
+
+**Action Items**
+
+**Grading Criteria**
+
+## Week 10: MLFlow Generative AI Model Tracking
+
+**Learning Outcomes**
+
+* Students are able to use MLFlow's GenAI platform to develop and iterate on AI agents.
+
+**Reading and Preparation**
+
+**Optional Resources**
+
+[MLFlow GenAI Documentation](https://mlflow.org/docs/latest/genai/)
+
+### Homework Description
+
+**Purpose**
+
+**Overview**
+
+**Action Items**
+
+
+**Grading Criteria**
+
+## Week 11 & 12: Final Project with AI Agents
+
+Similar to the first project, this project will simulate the working in a team to complete a project. 
+
+
+**Learning Outcomes**
+
+* Students will work in teams of 3-4 to create an end-to-end system leveraging AI agents.
+* Class time will function similarly to a real DS team meeting in a company.
+* Students will breakout into Zoom rooms to discuss their role and responsibilties.
+* The professor will hop from room to room to make sure that things are going smoothly
+
+**Reading and Preparation**
+
+[TextWorld](https://github.com/microsoft/TextWorld/tree/main)
+
+**Optional Resources**
+
+### Project Description
+
+Your goal is to create an LLM agent which plays a simple text-based adventure game.
+We will use the Microsoft TextWorld framework for the game.
+Your model should be albe to interact with the game, use tools, and hopefully solve the game and reach the end.
+The LLM will be run locally.
+
+Week 1 milestones:
+
+* Students have created their code repository on github
+* Students have set up an MLFlow tracking server to keep track of their model's progress
+* Students have started working on tools and iterated.
+
+Week 2 milestones:
+
+* The agent is now able to play through the game
+* Students can keep track of play sessions and  
+
+**Purpose**
+
+**Overview**
+
+**Action Items**
+
+**Grading Criteria**
+
+* Students tried multiple prompt strategies
+* Students identifed what tools should be created and properly implemented them
+* Students utilized MLFlow's GenAI framework to track multiple experiments.
+
+# Technical Requirements
+

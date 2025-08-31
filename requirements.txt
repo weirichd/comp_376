@@ -1,0 +1,7 @@
+tensorflow-datasets
+scipy
+scikit-learn
+pandas
+numpy
+kagglehub
+mlflow
