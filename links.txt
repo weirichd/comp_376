@@ -1,18 +1,31 @@
+Text file containing links to Google colab notebooks:
+
+Mid Semester Project,https://colab.research.google.com/drive/1dqHLQcYG-uKYB-zusu06L9QYpzdID_Zf?usp=sharing
+
+
+Final Project,https://colab.research.google.com/drive/1KRTlm6bOLswT9An42SNdAtC1RmA1wTrX?usp=sharing
+
+
+Unit 1 Lecture,https://colab.research.google.com/drive/1uo4N9Smcc9xbq4VLSj7jXyga5a0bXfOt?usp=sharing
+Unit 1 Homework,https://colab.research.google.com/drive/1lVLh7GMNuMIte9JBtw441G3YW5tl-15_?usp=sharing
+
+Unit 2 Lecture,https://colab.research.google.com/drive/1I98RzYVY-_DJfD7nTVQZ_8wUrP92WLTL?usp=sharing
+Unit 2 Homework,https://colab.research.google.com/drive/1XAYgm-OWRpsoEiskkD8et_c16pyo22vI?usp=sharing
+
 Unit 3 Lecture,https://colab.research.google.com/drive/10-VCXrG_DaJLBfj4nIP9qd71PHk30Cfg?usp=sharing
-Unit 7 Lecture ,https://colab.research.google.com/drive/12j3LbikAgFUw7JrvvvG2n23gJPmucGxq?usp=sharing
-Unit 8 Lecture ,https://colab.research.google.com/drive/1Dm6c_ZxLa7U7IdEQdqEYwS3ahPN9rZAb?usp=sharing
-Unit 2 Lecture ,https://colab.research.google.com/drive/1I98RzYVY-_DJfD7nTVQZ_8wUrP92WLTL?usp=sharing
-Final Project ,https://colab.research.google.com/drive/1KRTlm6bOLswT9An42SNdAtC1RmA1wTrX?usp=sharing
-Unit 3 Homework ,https://colab.research.google.com/drive/1NAMEW3VeODC652kzgcgtlMvHPKETpiPk?usp=sharing
-Unit 6 Lecture ,https://colab.research.google.com/drive/1V1RchAzwIL2WPjPHXCkcfagGTbcK0lda?usp=sharing
-Unit 2 Homework ,https://colab.research.google.com/drive/1XAYgm-OWRpsoEiskkD8et_c16pyo22vI?usp=sharing
-Unit 6 Homework ,https://colab.research.google.com/drive/1_kFp760Ff5J8M_OPza6yX3Z2o9bT2uK4?usp=sharing
-Mid Semester Project ,https://colab.research.google.com/drive/1dqHLQcYG-uKYB-zusu06L9QYpzdID_Zf?usp=sharing
-Unit 4 Homework ,https://colab.research.google.com/drive/1hDutry6exvpXUZLf6xelYw20wtY6uKXo?usp=sharing
-Unit 5 Homework ,https://colab.research.google.com/drive/1hFspsn_uWpdpeEuU9rNlSHn5E0qW8Fe-?usp=sharing
-Unit 1 Homework ,https://colab.research.google.com/drive/1lVLh7GMNuMIte9JBtw441G3YW5tl-15_?usp=sharing
-Unit 8 Homework ,https://colab.research.google.com/drive/1q-PrXYJDBVUnkfB15b6lvY-JLYRIGCWH?usp=sharing
-Unit 7 Homework ,https://colab.research.google.com/drive/1rP9wkYIVe1PMvalQ5mTbvIXAP02JprwI?usp=sharing
-Unit 4 Lecture ,https://colab.research.google.com/drive/1r_RxHtArz2YFZsoxkBUtsKKSK_spL2id?usp=sharing
-Unit 1 Lecture ,https://colab.research.google.com/drive/1uo4N9Smcc9xbq4VLSj7jXyga5a0bXfOt?usp=sharing
-Unit 5 Lecture ,https://colab.research.google.com/drive/1y8DnXt2wapfF6UPWZTyawYXu5cpAyTgY?usp=sharing
+Unit 3 Homework,https://colab.research.google.com/drive/1NAMEW3VeODC652kzgcgtlMvHPKETpiPk?usp=sharing
+
+Unit 4 Lecture,https://colab.research.google.com/drive/1r_RxHtArz2YFZsoxkBUtsKKSK_spL2id?usp=sharing
+Unit 4 Homework,https://colab.research.google.com/drive/1hDutry6exvpXUZLf6xelYw20wtY6uKXo?usp=sharing
+
+Unit 5 Lecture,https://colab.research.google.com/drive/1y8DnXt2wapfF6UPWZTyawYXu5cpAyTgY?usp=sharing
+Unit 5 Homework,https://colab.research.google.com/drive/1hFspsn_uWpdpeEuU9rNlSHn5E0qW8Fe-?usp=sharing
+
+Unit 6 Lecture,https://colab.research.google.com/drive/1V1RchAzwIL2WPjPHXCkcfagGTbcK0lda?usp=sharing
+Unit 6 Homework,https://colab.research.google.com/drive/1_kFp760Ff5J8M_OPza6yX3Z2o9bT2uK4?usp=sharing
+
+Unit 7 Lecture,https://colab.research.google.com/drive/12j3LbikAgFUw7JrvvvG2n23gJPmucGxq?usp=sharing
+Unit 7 Homework,https://colab.research.google.com/drive/1rP9wkYIVe1PMvalQ5mTbvIXAP02JprwI?usp=sharing
+
+Unit 8 Lecture,https://colab.research.google.com/drive/1Dm6c_ZxLa7U7IdEQdqEYwS3ahPN9rZAb?usp=sharing
+Unit 8 Homework,https://colab.research.google.com/drive/1q-PrXYJDBVUnkfB15b6lvY-JLYRIGCWH?usp=sharing

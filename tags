@@ -37,33 +37,66 @@
 !_TAG_ROLE_DESCRIPTION!Make!makefile	optional	/optionally included/
 %	Makefile	/^%:$/;"	t
 CONTAINER_NAME	Makefile	/^CONTAINER_NAME = tensorflow-gpu-jupyter-container$/;"	m
+Comp 376	.ipynb_checkpoints/README-checkpoint.md	/^# Comp 376$/;"	c
 Comp 376	README.md	/^# Comp 376$/;"	c
+Course Overview	.ipynb_checkpoints/README-checkpoint.md	/^## Course Overview$/;"	s	chapter:Comp 376
 Course Overview	README.md	/^## Course Overview$/;"	s	chapter:Comp 376
-Homework	README.md	/^### Homework$/;"	S	section:Module Breakdown""Week 1: Intro to Cloud Computing/Python Scripts and Dependencies
-Homework	README.md	/^### Homework$/;"	S	section:Module Breakdown""Week 2:  MLFLow for Experiment Tracking
+Example Problems	.ipynb_checkpoints/README-checkpoint.md	/^#### Example Problems$/;"	t	subsection:Module Breakdown""Week 9: LLM Based Agents""Homework Description
+Example Problems	README.md	/^#### Example Problems$/;"	t	subsection:Module Breakdown""Week 9: LLM Based Agents""Homework Description
+Example Questions	.ipynb_checkpoints/README-checkpoint.md	/^#### Example Questions$/;"	t	subsection:Module Breakdown""Week 1: Intro to Cloud Computing and Production Python""Homework
+Example Questions	.ipynb_checkpoints/README-checkpoint.md	/^#### Example Questions$/;"	t	subsection:Module Breakdown""Week 2:  MLFLow for Experiment Tracking""Homework
+Example Questions	README.md	/^#### Example Questions$/;"	t	subsection:Module Breakdown""Week 1: Intro to Cloud Computing and Production Python""Homework
+Example Questions	README.md	/^#### Example Questions$/;"	t	subsection:Module Breakdown""Week 2:  MLFLow for Experiment Tracking""Homework
+Grading and Assignments	.ipynb_checkpoints/README-checkpoint.md	/^## Grading and Assignments$/;"	s	chapter:Comp 376
+Grading and Assignments	README.md	/^## Grading and Assignments$/;"	s	chapter:Comp 376
+Homework	.ipynb_checkpoints/README-checkpoint.md	/^### Homework $/;"	S	section:Module Breakdown""Week 2:  MLFLow for Experiment Tracking
+Homework	.ipynb_checkpoints/README-checkpoint.md	/^### Homework$/;"	S	section:Module Breakdown""Week 1: Intro to Cloud Computing and Production Python
+Homework	.ipynb_checkpoints/README-checkpoint.md	/^### Homework$/;"	S	section:Module Breakdown""Week 3:  MLFLow for model deployment and tracking
+Homework	.ipynb_checkpoints/README-checkpoint.md	/^### Homework$/;"	S	section:Module Breakdown""Week 4: Feature Engineering
+Homework	README.md	/^### Homework $/;"	S	section:Module Breakdown""Week 2:  MLFLow for Experiment Tracking
+Homework	README.md	/^### Homework$/;"	S	section:Module Breakdown""Week 1: Intro to Cloud Computing and Production Python
 Homework	README.md	/^### Homework$/;"	S	section:Module Breakdown""Week 3:  MLFLow for model deployment and tracking
-Homework	README.md	/^### Homework$/;"	S	section:Module Breakdown""Week 4: Feature Development and Feature Store
+Homework	README.md	/^### Homework$/;"	S	section:Module Breakdown""Week 4: Feature Engineering
+Homework Description	.ipynb_checkpoints/README-checkpoint.md	/^### Homework Description$/;"	S	section:Module Breakdown""Week 10: MLFlow Generative AI Model Tracking
+Homework Description	.ipynb_checkpoints/README-checkpoint.md	/^### Homework Description$/;"	S	section:Module Breakdown""Week 8: Prompt Engineering
+Homework Description	.ipynb_checkpoints/README-checkpoint.md	/^### Homework Description$/;"	S	section:Module Breakdown""Week 9: LLM Based Agents
 Homework Description	README.md	/^### Homework Description$/;"	S	section:Module Breakdown""Week 10: MLFlow Generative AI Model Tracking
-Homework Description	README.md	/^### Homework Description$/;"	S	section:Module Breakdown""Week 7: Introduction to LLMs
 Homework Description	README.md	/^### Homework Description$/;"	S	section:Module Breakdown""Week 8: Prompt Engineering
 Homework Description	README.md	/^### Homework Description$/;"	S	section:Module Breakdown""Week 9: LLM Based Agents
 IMAGE_NAME	Makefile	/^IMAGE_NAME = my-tensorflow-gpu-jupyter$/;"	m
+Lecture and Homework Materials	.ipynb_checkpoints/README-checkpoint.md	/^## Lecture and Homework Materials$/;"	s	chapter:Comp 376
+Lecture and Homework Materials	README.md	/^## Lecture and Homework Materials$/;"	s	chapter:Comp 376
+Module Breakdown	.ipynb_checkpoints/README-checkpoint.md	/^# Module Breakdown$/;"	c
 Module Breakdown	README.md	/^# Module Breakdown$/;"	c
+Project Description	.ipynb_checkpoints/README-checkpoint.md	/^### Project Description$/;"	S	section:Module Breakdown""Week 11 & 12: Final Project with AI Agents
 Project Description	README.md	/^### Project Description$/;"	S	section:Module Breakdown""Week 11 & 12: Final Project with AI Agents
-Project Description	README.md	/^### Project Description$/;"	S	section:Module Breakdown""Weeks 5 & 6 Mid Semester Project
+Projects	.ipynb_checkpoints/README-checkpoint.md	/^### Projects$/;"	S	section:Comp 376""Textbook
+Projects	README.md	/^### Projects$/;"	S	section:Comp 376""Textbook
+Schedule	.ipynb_checkpoints/README-checkpoint.md	/^## Schedule$/;"	s	chapter:Comp 376
 Schedule	README.md	/^## Schedule$/;"	s	chapter:Comp 376
 TF_VERSION	Makefile	/^TF_VERSION = 2.19.0  # Change this to update TensorFlow$/;"	m
-Technical Requirements	README.md	/^# Technical Requirements$/;"	c
+Textbook	.ipynb_checkpoints/README-checkpoint.md	/^## Textbook$/;"	s	chapter:Comp 376
+Textbook	README.md	/^## Textbook$/;"	s	chapter:Comp 376
+Week 10: MLFlow Generative AI Model Tracking	.ipynb_checkpoints/README-checkpoint.md	/^## Week 10: MLFlow Generative AI Model Tracking$/;"	s	chapter:Module Breakdown
 Week 10: MLFlow Generative AI Model Tracking	README.md	/^## Week 10: MLFlow Generative AI Model Tracking$/;"	s	chapter:Module Breakdown
+Week 11 & 12: Final Project with AI Agents	.ipynb_checkpoints/README-checkpoint.md	/^## Week 11 & 12: Final Project with AI Agents$/;"	s	chapter:Module Breakdown
 Week 11 & 12: Final Project with AI Agents	README.md	/^## Week 11 & 12: Final Project with AI Agents$/;"	s	chapter:Module Breakdown
-Week 1: Intro to Cloud Computing/Python Scripts and Dependencies	README.md	/^## Week 1: Intro to Cloud Computing\/Python Scripts and Dependencies$/;"	s	chapter:Module Breakdown
+Week 1: Intro to Cloud Computing and Production Python	.ipynb_checkpoints/README-checkpoint.md	/^## Week 1: Intro to Cloud Computing and Production Python$/;"	s	chapter:Module Breakdown
+Week 1: Intro to Cloud Computing and Production Python	README.md	/^## Week 1: Intro to Cloud Computing and Production Python$/;"	s	chapter:Module Breakdown
+Week 2:  MLFLow for Experiment Tracking	.ipynb_checkpoints/README-checkpoint.md	/^## Week 2:  MLFLow for Experiment Tracking$/;"	s	chapter:Module Breakdown
 Week 2:  MLFLow for Experiment Tracking	README.md	/^## Week 2:  MLFLow for Experiment Tracking$/;"	s	chapter:Module Breakdown
+Week 3:  MLFLow for model deployment and tracking	.ipynb_checkpoints/README-checkpoint.md	/^## Week 3:  MLFLow for model deployment and tracking$/;"	s	chapter:Module Breakdown
 Week 3:  MLFLow for model deployment and tracking	README.md	/^## Week 3:  MLFLow for model deployment and tracking$/;"	s	chapter:Module Breakdown
-Week 4: Feature Development and Feature Store	README.md	/^## Week 4: Feature Development and Feature Store$/;"	s	chapter:Module Breakdown
-Week 7: Introduction to LLMs	README.md	/^## Week 7: Introduction to LLMs $/;"	s	chapter:Module Breakdown
+Week 4: Feature Engineering	.ipynb_checkpoints/README-checkpoint.md	/^## Week 4: Feature Engineering$/;"	s	chapter:Module Breakdown
+Week 4: Feature Engineering	README.md	/^## Week 4: Feature Engineering$/;"	s	chapter:Module Breakdown
+Week 7: Introduction to Large Language Models	.ipynb_checkpoints/README-checkpoint.md	/^## Week 7: Introduction to Large Language Models$/;"	s	chapter:Module Breakdown
+Week 7: Introduction to Large Language Models	README.md	/^## Week 7: Introduction to Large Language Models$/;"	s	chapter:Module Breakdown
+Week 8: Prompt Engineering	.ipynb_checkpoints/README-checkpoint.md	/^## Week 8: Prompt Engineering$/;"	s	chapter:Module Breakdown
 Week 8: Prompt Engineering	README.md	/^## Week 8: Prompt Engineering$/;"	s	chapter:Module Breakdown
+Week 9: LLM Based Agents	.ipynb_checkpoints/README-checkpoint.md	/^## Week 9: LLM Based Agents$/;"	s	chapter:Module Breakdown
 Week 9: LLM Based Agents	README.md	/^## Week 9: LLM Based Agents$/;"	s	chapter:Module Breakdown
-Weeks 5 & 6 Mid Semester Project	README.md	/^## Weeks 5 & 6 Mid Semester Project$/;"	s	chapter:Module Breakdown
+Weeks 5 & 6: Mid Semester Project	.ipynb_checkpoints/README-checkpoint.md	/^## Weeks 5 & 6: Mid Semester Project$/;"	s	chapter:Module Breakdown
+Weeks 5 & 6: Mid Semester Project	README.md	/^## Weeks 5 & 6: Mid Semester Project$/;"	s	chapter:Module Breakdown
 all	Makefile	/^all: build check-gpu$/;"	t
 build	Makefile	/^build: Dockerfile requirements.txt$/;"	t
 check-gpu	Makefile	/^check-gpu:$/;"	t
