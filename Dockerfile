@@ -15,8 +15,8 @@ USER root
 
 COPY requirements.txt .
 
-RUN apt-get update && apt-get install -y graphviz
-RUN pip install --upgrade pip && pip install --resume-retries 2 --no-cache-dir -r requirements.txt
+RUN apt-get update && apt-get install -y graphviz build-essential libffi-dev curl git
+RUN pip install --upgrade pip && pip install --resume-retries 2 --no-cache-dir --ignore-installed -r requirements.txt
 
 # Start Jupyter Notebook when container runs
 CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]

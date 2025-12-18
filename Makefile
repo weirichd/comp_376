@@ -1,6 +1,6 @@
 # Name of the Docker image and container
-IMAGE_NAME = my-tensorflow-gpu-jupyter
-CONTAINER_NAME = tensorflow-gpu-jupyter-container
+IMAGE_NAME = comp-376
+CONTAINER_NAME = comp-376-container
 TF_VERSION = 2.19.0  # Change this to update TensorFlow
 
 # Default target: Build and check GPU availability
